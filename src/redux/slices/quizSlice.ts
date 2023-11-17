@@ -1,4 +1,4 @@
-import { QuestionOption } from "@/pages/question/config";
+import { QuestionOption } from "@/config";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 type QuizProgress = {
