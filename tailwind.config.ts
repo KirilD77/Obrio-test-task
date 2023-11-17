@@ -9,10 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'button-active': "linear-gradient(166deg, #141333 -33.39%, #202261 15.89%, #543C97 55.84%, #6939A1 74.96%)",
+        'explanatory-info-bg': "linear-gradient(166deg, #141333 -33.39%, #202261 15.89%, #543C97 55.84%, #6939A1 74.96%)"
+
       },
+      colors: {
+        "button-active": "#FBFBFF"
+      }
     },
   },
   plugins: [],
