@@ -45,9 +45,9 @@ export const getStaticProps: GetStaticProps = async (
 const useQuestionTitle = (question: Question) => {
   const quizProgress = useSelector((state) => state.quiz.quizProgress) || {}
 
-  if (!question.providesPlaceholders?.length) return question.title
+  if (!question?.providesPlaceholders?.length) return question?.title
 
-  return question.providesPlaceholders.reduce((title, placeholder) => {
+  return question?.providesPlaceholders.reduce((title, placeholder) => {
     let targetOption: QuestionOption | null = null
     for (const key of Object.keys(quizProgress)) {
       const option = quizProgress[key]
